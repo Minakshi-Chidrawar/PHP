@@ -1,0 +1,10 @@
+<?php
+	$my_array = array("abcd","abc","de","hjjj","g","wer");
+	$new_array = array_map('strlen', $my_array);
+	
+	// Show maximum and minimum string length using max() function and min() function 
+	echo "<pre>"; var_dump($my_array); echo "</pre>";
+	echo "<pre>"; var_dump($new_array); echo "</pre>";
+	
+	echo "The shortest array length is " . min($new_array) . ".<br>";
+	echo "The longest array length is " . max($new_array) . ".<br>";
