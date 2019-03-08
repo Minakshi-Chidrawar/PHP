@@ -1,0 +1,18 @@
+<?php
+	function arraysearch($arra1, $search)
+	{
+		reset($arra1);
+		while (list ($key, $val) = each ($arra1)) 
+		{
+			if (preg_match ("/$search/i", $val)) 
+			{
+			   echo $search." has found in " . $key . "<br>";
+			} 
+			else 
+			{
+				echo $search." has not found in " . $key . "<br>";
+			}
+		}
+	}
+	$exercises = array("part1"=>"PHP array", "part2"=>"PHP String", "part3"=>"PHP Math");
+	arraysearch($exercises, "Math");
